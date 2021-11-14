@@ -1,0 +1,35 @@
+.nav__button {
+    width: 100px;
+    height: 32px;
+}
+.nav__button-wrapper {
+    text-align: center;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-bottom: 15px;
+    min-width: 284px;
+}
+
+
+.nav-list__link {
+    font-family: $font_general;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $basic_blue;
+    text-decoration: underline $basic_blue;
+
+    &:hover {
+        text-decoration: none;
+        color: $basic_lightblue;
+    }
+
+    &:active {
+        color: $basic_dakrblue;
+    }
+}

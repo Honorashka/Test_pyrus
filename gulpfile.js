@@ -8,6 +8,7 @@ const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
+const watch = require('gulp-watch');
 
 
 // Styles
@@ -75,13 +76,13 @@ const server = (done) => {
 exports.server = server;
 
 // Watcher
-
-const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+const watchers = () => {
+  gulp.watch("source/scss/**/*.scss", gulp.series(styles))
   gulp.watch("source/*.html").on("change", sync.reload);
+
 }
 
 exports.default = gulp.series(
-  build, server, watcher
+  build, server, watchers
 );
 

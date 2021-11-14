@@ -1,0 +1,17 @@
+.button {
+    padding: 0;
+    margin: 0;
+    background-color: $basic_blue;
+    border-radius: 4px;
+    color: $basic_white;
+    border: none;
+
+    &:hover {
+        background-color: $basic_lightblue;
+      }
+
+    &:active {
+        background-color: $basic_dakrblue;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
