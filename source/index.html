@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>Test Pyrus</title>
+  <link rel="preload" href="fonts/PTSans-Regular.ttf" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/PTSansNarrow-Regular.ttf" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img src="../source/img/logo.svg" alt="Логотип Котопочта" width="286" height="86">
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list list">
+          <li class="list-item">
+            <a href="#">Забрать кота себе</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Задонатить на корм</a>
+          </li>
+        </ul>
+        <button class="nav__button button">Войти</button>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="page-main__information information">
+      <div class="advantages">
+        <ul class="advantages__list list-answer">
+          <li class="list-answer__item">
+            <h2 class="advantages__title list-answer__title">Как это работает?</h2>
+            <p class="list-answer__text">Наши коты любят, когда с ними разговаривают. Напишите письмо, и мы прочитаем
+              его котам, когда они придут почесать пузо.</p>
+          </li>
+          <li class="list-answer__item">
+            <h2 class="advantages__title list-answer__title">Что передать котам?</h2>
+            <p class="list-answer__text">Можно рассказать где вы видели вкусных мышей, какого размера синицы прилетели в
+              город, или просто интересную историю из жизни.</p>
+          </li>
+        </ul>
+        <form class="main-form" method="post" action="https://echo.htmlacademy.ru"
+          aria-label="Отправка формы передачи информации котам =)">
+          <fieldset class="main-form__fieldset">
+            <legend class="main-form__legend">Сообщение</legend>
+            <textarea name="main-form-text" id="text" cols="30" rows="10" placeholder="Что-нибудь хорошее"></textarea>
+          </fieldset>
+          <fieldset class="main-form__fieldset">
+            <legend class="main-form__legend main-form__title--add">Дополнительный опции</legend>
+            <ul class="main-form__list main-form__list--add">
+              <li class="main-form__item main-form__item--add">
+                <input class="main-form__checkbox visually-hidden" id="nose" type="checkbox" name="nose">
+                <label class="main-form__checkbox-label" for="nose" tabindex="0">Сделать пуньк в нос</label>
+              </li>
+              <li class="main-form__item main-form__item--add">
+                <input class="main-form__checkbox visually-hidden" id="yummy" type="checkbox" name="yummy" checked>
+                <label class="main-form__checkbox-label" for="yummy" tabindex="0">Угостить вкусняшкой</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="main-form__fieldset">
+            <ul class="main-form__list main-form__list--contact">
+              <li class="main-form__item main-form__item--contact">
+                <legend class="main-form__legend" for="name">Ваше имя</legend>
+                <input class="main-form__input" type="text" id="name" name="name">
+              </li>
+              <li class="main-form__item main-form__item--contact">
+                <legend class="main-form__legend" for="email">Email</legend>
+                <input class="main-form__input" type="email" id="email" name="email"
+                  placeholder="youremail@catmail.org">
+              </li>
+            </ul>
+          </fieldset>
+          <div class="main-form__button-wrapper">
+            <button class="main-form__button" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="page-main__gallery gallery">
+      <h2 clas="page-main__gallery-title">Довольные коты</h2>
+      <ul class="page-main__gallery-list gallery-list">
+        <li class="gallery-item">
+          <img class="gallery-img" src="../source/img/cat_girl.jpg" alt="Котик с девушкой" width="335" height="223">
+        </li>
+        <li class="gallery-item">
+          <img class="gallery-img" src="../source/img/cat_window.jpg" alt="Котик рядом с окошком" width="335" height="447">
+        </li>
+        <li class="gallery-item">
+          <img class="gallery-img" src="../source/img/cat_chill.jpg" alt="Котик чилит" width="335" height="223">
+        </li>
+      </ul>
+
+    </section>
+  </main>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
