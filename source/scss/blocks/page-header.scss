@@ -1,13 +1,37 @@
 .page-header {
     padding: 0 20px;
     padding-bottom: 60px;
+
+    @media (min-width: $desktop-width) {
+        padding: 0 100px;   
+      }
+
+}
+
+.page-header__wrapper {
+
+    @media (min-width: $desktop-width) {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between; 
+        padding-bottom: 35px;
+      } 
 }
 .page-header__logo-wrapper {
-    padding: 34px 25px 20px;
+    padding: 0 20px;
+    padding-bottom: 16px;
+    padding-top: 35px;
+
+    @media (min-width: $desktop-width) {
+        padding:0;
+        padding-top: 84px;
+      } 
 }
 
 .page-header__logo-img {
     fill:$basic_black;
+    padding-left: 4px;
 
     &:hover {
         fill:$basic_lightblue

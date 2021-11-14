@@ -1,15 +1,26 @@
+.nav {
+    @media (min-width: $desktop-width) {
+        display: flex;
+        padding-top: 89px; 
+      }
+}
+
 .nav__button {
     width: 100px;
     height: 32px;
 }
 .nav__button-wrapper {
     text-align: center;
+
+    @media (min-width: $desktop-width) {
+        padding-bottom: 13px;
+          }
 }
 .nav-list {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 25px;
     padding-bottom: 15px;
     min-width: 284px;
 }

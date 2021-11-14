@@ -2,13 +2,25 @@
     border: none;
     margin: 0;
     padding: 0;  
-    padding-bottom: 32px;
+    padding-bottom: 29px;
+
+    @media (min-width: $desktop-width) {
+        padding-bottom: 25px;
+      } 
 }
+
+.main-form__fieldset:nth-child(3) {
+    padding-bottom: 9px;
+    @media (min-width: $desktop-width) {
+        padding-bottom: 12px;
+      } 
+}
+
 .main-form__legend {
     font-family: $font_add;
     font-weight: 400;
     font-size: 28px;
-    padding-bottom: 15px;
+    padding-bottom: 19px;
 }
 
 .main-form__textarea {
@@ -55,7 +67,7 @@
     }
 }
 .main-form__item:last-child {
-    padding-bottom: 0;
+    padding-bottom: 8px;
 }
 
 
@@ -89,20 +101,30 @@
     font-size: 16px;
     line-height: 21px;
     padding-bottom: 8px;
+    @media (min-width: $desktop-width) {
+        min-width: 100px;
+      } 
 }
 .main-form__item-contact {
     padding-right: 11px;
+    padding-top: 8px;
+
+    @media (min-width: $desktop-width) {
+        display: flex;
+        padding-right: 0;
+        padding-top: 0;
+        margin-top: 8px;
+      } 
 }
 
 .main-form__item-contact:last-child {
-    padding-top: 23px;
+    padding-top: 20px;
     padding-bottom: 0;
 }
 
 .main-form__input-contact {
     margin: 0;
     padding-left: 11px;
-    padding-top: 7px;
     width: 100%;
     height: 32px;
     border: 1px solid rgba(0, 0, 0, 0.15);
@@ -126,8 +148,13 @@
     font-size: 14px;
     line-height: 18px;
     color: $basic_grey;
-    padding-top: 7px;
-    padding-bottom: 32px;
+    padding-top: 5px;
+    padding-bottom: 53px;
+
+    @media (min-width: $desktop-width) {
+        padding-left: 95px;
+      } 
+    
 }
 
 .main-form__button-wrapper {
@@ -144,17 +171,36 @@
         }
     }
 
+    @media (min-width: $desktop-width) {
+        width: 160px;   
+      }
+
+
 }
 
 .main-form__button {
-    width: 335px;
+    width: 298px;
     height: 48px;
+    font-size: 20px;
+    font-family: $font_general;
+    line-height: 25px;
+    padding-left: 32px;
+
+    @media (min-width: $desktop-width) {
+        width: 140px;   
+        padding-left: 15px;
+      }
 }
 
 .main-form__button-icon {
     position: absolute;
-    top: 14px;
-    left: 106px;
+    top: 15px;
+    left: 111px;
     fill: $basic_white;
+
+    @media (min-width: $desktop-width) {
+        left: 15px;
+        top: 15px;   
+      }
 }
 

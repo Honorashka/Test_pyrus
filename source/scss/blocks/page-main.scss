@@ -1,9 +1,24 @@
+.page-main {
+
+    @media (min-width: $desktop-width) {
+        padding: 0 80px;
+        display: flex;
+        padding-bottom: 80px;
+      }
+}
+
 .page-main__information {
     padding: 0 20px;
 }
 
 .page-main__gallery {
     padding: 0 20px;
+    padding-top: 45px;
+
+    @media (min-width: $desktop-width) {
+        padding-top: 0;
+      }
+
 }
 
 .page-main-gallery__title {
@@ -18,4 +33,11 @@
 
 .page-main-gallery__item {
     padding-bottom: 16px;
+}
+
+.page-main-gallery__img {
+    @media (min-width: $desktop-width) {
+        min-width: 300px;  
+      }
+
 }
